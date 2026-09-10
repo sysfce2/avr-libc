@@ -6,6 +6,11 @@
 
 ## Improvements and Additions
 
+  - Object files are now tagged with `.gnu_attribute` according to the
+    `double` / `long double` ABI in use.  It follows the compiler in
+    that only the object files are tagged where the size of the type
+    actually makes a difference ([#1072][1072]).
+
   - Add `float` <-> 64-bit fixed point conversions ([#1066][1066]).
 
 ## Issues closed
@@ -29,6 +34,7 @@
 [1066]: https://github.com/avrdudes/avr-libc/issues/1066
 [1068]: https://github.com/avrdudes/avr-libc/issues/1068
 [1069]: https://github.com/avrdudes/avr-libc/issues/1069
+[1072]: https://github.com/avrdudes/avr-libc/issues/1072
 
 
 # Changes in AVR-LibC v2.3.2
